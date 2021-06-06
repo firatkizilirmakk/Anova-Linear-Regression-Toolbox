@@ -103,6 +103,8 @@ def test_Sidak_correction():
 
 def test_ANOVA1_CI_linear_combs():
     print("Test: ANOVA1_CI_linear_combs\n")
+
+    # DATA from https://itl.nist.gov/div898/handbook/prc/section4/prc436.htm#contrastex2
     alpha = 0.05
     x = [[6.9, 5.4, 5.8, 4.6, 4.0], [8.3, 6.8, 7.8, 9.2, 6.5], [8.0, 10.5, 8.1, 6.9, 9.3], [5.8, 3.8, 6.1, 5.6, 6.2]]
 
@@ -178,6 +180,8 @@ def test_ANOVA1_CI_linear_combs():
 
 def test_ANOVA1_test_linear_combs():
     print("Test: ANOVA1_test_linear_combs\n")
+
+    # DATA from https://itl.nist.gov/div898/handbook/prc/section4/prc436.htm#contrastex2
     alpha = 0.05
     x = [[6.9, 5.4, 5.8, 4.6, 4.0], [8.3, 6.8, 7.8, 9.2, 6.5], [8.0, 10.5, 8.1, 6.9, 9.3], [5.8, 3.8, 6.1, 5.6, 6.2]]
 
@@ -185,7 +189,6 @@ def test_ANOVA1_test_linear_combs():
 
     print("**********")
     print("Orthogonal Contrast")
-    C = [[0.5, 0.5, -0.5, -0.5], [0.5, -0.5, 0.5, -0.5]]
     C = [[1, 0, -1, 0]]
     d = [0]
     print("Linear combinations C: {}\nalpha: {}\nTested values d: {}\n".format(C, alpha, d))
@@ -203,7 +206,6 @@ def test_ANOVA1_test_linear_combs():
     print("\n**********")
 
     print("Orthogonal Contrast")
-    C = [[0.5, 0.5, -0.5, -0.5], [0.5, -0.5, 0.5, -0.5]]
     C = [[1, 0, 0, -1]]
     d = [0]
     print("Linear combinations C: {}\nalpha: {}\nTested values d: {}\n".format(C, alpha, d))
@@ -510,7 +512,7 @@ def main():
                         test_Mult_LR_partition_TSS, test_Mult_norm_LR_simul_CI, test_Mult_norm_LR_CR, test_Mult_norm_LR_is_in_CR, test_Mult_norm_LR_test_general,
                         test_Mult_norm_LR_test_comp, test_Mult_norm_LR_test_linear_reg, test_Mult_norm_LR_pred_CI]
 
-    #functions_to_test = [test_Mult_norm_LR_test_general]
+    #functions_to_test = []
 
     for func in functions_to_test:
         print("--------------------------")
