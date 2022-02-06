@@ -25,7 +25,7 @@ This repository provides a Python script for ANOVA and linear regression anaylse
 		| Within groups  | 16.00 | 21.29 |  1.33 |      |
 		| Total          | 19.00 |       |       |      |
 
-	* P-value = 0.000684 < alpha = 0.05. Thus, **the null hypothesis** that the means of the groups are equal is** rejected at significance level alpha = 0.05.**
+	* P-value = 0.000684 < alpha = 0.05. Thus, **the null hypothesis** that the means of the groups are equal is **rejected at significance level alpha = 0.05.**
 
 * **ANOVA1_CI_linear_combs** function calculates simultaneous confidence intervals of linear combinations given as a matrix, and returns a list of confidence intervals holding simultaneously with 1-alpha probability:
 	*  The function offers different methods for calculating the interval:
