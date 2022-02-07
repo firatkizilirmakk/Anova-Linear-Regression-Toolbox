@@ -5,7 +5,7 @@ This repository provides a Python script for ANOVA and linear regression anaylse
 ### Content
 
 * The script, [functions.py](functions.py), is designed to provide necessary functions for one-way ANOVA, two-way ANOVA, simple and multiple linear regression. 
-* [main.py](functions.py) file is a test script to demonstrate how to use functions with what kind of arguments. It could be used with *-w* parameter to show output of tests one by one, waiting an input from user.
+* [main.py](main.py) file is a test script to demonstrate how to use functions with what kind of arguments. It could be used with *-w* parameter to show output of tests one by one, waiting an input from user.
 
 ### Example
 * **ANOVA1_test_equality** function tests the equality of the means among the groups:
